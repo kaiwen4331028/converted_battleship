@@ -268,7 +268,7 @@ public static class GameResources
 	private static void FreeFonts()
 	{
 		Font obj = default(Font);
-		foreach ( obj in _Fonts.Values) {
+		foreach (Font obj in _Fonts.Values) {
 			SwinGame.FreeFont(obj);
 		}
 	}
