@@ -6,13 +6,13 @@ using System.Collections.Generic;
 //using System.Data;
 using System.Diagnostics;
 using SwinGameSDK;
-using static GameController;
-using static UtilityFunctions;
-using static GameResources;
-using static DeploymentController;
-using static DiscoveryController;
-using static EndingGameController;
-using static HighScoreController;
+//using static GameController;
+//using static UtilityFunctions;
+//using static GameResources;
+//using static DeploymentController;
+//using static DiscoveryController;
+//using static EndingGameController;
+//using static HighScoreController;
 
 /// <summary>
 /// The menu controller handles the drawing and user interactions
@@ -118,7 +118,7 @@ static class MenuController
 	/// <returns>false if a clicked missed the buttons. This can be used to check prior menus.</returns>
 	private static bool HandleMenuInput(int menu, int level, int xOffset)
 	{
-		if (SwinGame.KeyTyped(KeyCode.VK_ESCAPE)) {
+		if (SwinGame.KeyTyped(KeyCode.vk_ESCAPE)) {
 			EndCurrentState();
 			return true;
 		}
