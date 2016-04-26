@@ -16,6 +16,8 @@ public class AttackResult
 	private int _Row;
 
 	private int _Column;
+
+
 	/// <summary>
 	/// The result of the attack
 	/// </summary>
@@ -93,6 +95,7 @@ public class AttackResult
 
 		return Text + " " + _Ship.Name;
 	}
+
 }
 
 //=======================================================

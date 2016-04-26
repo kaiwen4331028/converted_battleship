@@ -1,16 +1,16 @@
 ﻿<Properties StartupItem="BattleShips.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\DeploymentController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\EndingGameController.cs">
     <Files>
       <File FileName="src\UtilityFunctions.cs" Line="17" Column="1" />
-      <File FileName="src\DeploymentController.cs" Line="90" Column="39" />
+      <File FileName="src\DeploymentController.cs" Line="3" Column="14" />
       <File FileName="src\DiscoveryController.cs" Line="1" Column="1" />
-      <File FileName="src\EndingGameController.cs" Line="1" Column="1" />
-      <File FileName="src\GameController.cs" Line="357" Column="20" />
+      <File FileName="src\EndingGameController.cs" Line="50" Column="45" />
+      <File FileName="src\GameController.cs" Line="324" Column="35" />
       <File FileName="src\GameResources.cs" Line="1" Column="1" />
       <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
       <File FileName="src\MenuController.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\yong\Documents\GitHub\converted_battleship\src\GameLogic.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\yong\Documents\GitHub\converted_battleship\src\GameLogic.cs" Line="22" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -109,6 +109,14 @@ public class Player : IEnumerable<Ship>
 		get { return _hits; }
 	}
 
+	public int CurrentMarks 
+	{
+		get
+		{
+			return (Hits * 12) - Shots - (PlayerGrid.ShipsKilled * 20);
+		}
+	}
+
 	/// <summary>
 	/// Total number of shots that missed
 	/// </summary>

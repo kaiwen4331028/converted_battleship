@@ -33,6 +33,7 @@ public static class GameResources
 		NewImage("Deploy", "deploy.jpg");
 
 		//Deployment
+		NewImage("HomeButton", "deploy_home_button.png");
 		NewImage("LeftRightButton", "deploy_dir_button_horiz.png");
 		NewImage("UpDownButton", "deploy_dir_button_vert.png");
 		NewImage("SelectedShip", "deploy_button_hl.png");
