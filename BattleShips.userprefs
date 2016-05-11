@@ -1,17 +1,29 @@
 ﻿<Properties StartupItem="BattleShips.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\EndingGameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\MenuController.cs">
     <Files>
-      <File FileName="src\UtilityFunctions.cs" Line="17" Column="1" />
-      <File FileName="src\DeploymentController.cs" Line="3" Column="14" />
+      <File FileName="src\UtilityFunctions.cs" Line="250" Column="39" />
+      <File FileName="src\DeploymentController.cs" Line="1" Column="1" />
       <File FileName="src\DiscoveryController.cs" Line="1" Column="1" />
-      <File FileName="src\EndingGameController.cs" Line="50" Column="45" />
-      <File FileName="src\GameController.cs" Line="324" Column="35" />
+      <File FileName="src\EndingGameController.cs" Line="1" Column="1" />
+      <File FileName="src\GameController.cs" Line="1" Column="1" />
       <File FileName="src\GameResources.cs" Line="1" Column="1" />
       <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
-      <File FileName="src\MenuController.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\yong\Documents\GitHub\converted_battleship\src\GameLogic.cs" Line="22" Column="7" />
+      <File FileName="src\MenuController.cs" Line="16" Column="1" />
+      <File FileName="src\GameState.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\Downloads\C# File BattleShip\src\MenuController.cs" Line="42" Column="3" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BattleShips" expanded="True">
+            <Node name="BattleShips" expanded="True" selected="True">
+              <Node name="src" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

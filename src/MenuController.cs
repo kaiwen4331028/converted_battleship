@@ -34,11 +34,17 @@ static class MenuController
 			"PLAY",
 			"SETUP",
 			"SCORES",
+			"MUTE",
+			"BGM",
+			"INSTRUCTION",
 			"QUIT"
 		},
 		new string[] {
 			"RETURN",
 			"SURRENDER",
+			"MUTE",
+			"BGM",
+			"INSTRUCTION",
 			"QUIT"
 		},
 		new string[] {
@@ -63,17 +69,23 @@ static class MenuController
 	private const int MAIN_MENU_PLAY_BUTTON = 0;
 	private const int MAIN_MENU_SETUP_BUTTON = 1;
 	private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
+	private const int MAIN_MENU_MUTE_BUTTON = 3;
+	private const int MAIN_MENU_BGM_BUTTON = 4;
+	private const int MAIN_MENU_INSTRUCTION_BUTTON = 5;
+	private const int MAIN_MENU_QUIT_BUTTON = 6;
 
-	private const int MAIN_MENU_QUIT_BUTTON = 3;
 	private const int SETUP_MENU_EASY_BUTTON = 0;
 	private const int SETUP_MENU_MEDIUM_BUTTON = 1;
 	private const int SETUP_MENU_HARD_BUTTON = 2;
 
 	private const int SETUP_MENU_EXIT_BUTTON = 3;
+
 	private const int GAME_MENU_RETURN_BUTTON = 0;
 	private const int GAME_MENU_SURRENDER_BUTTON = 1;
-
-	private const int GAME_MENU_QUIT_BUTTON = 2;
+	private const int GAME_MENU_MUTE_BUTTON = 2;
+	private const int GAME_MENU_BGM_BUTTON = 3;
+	private const int GAME_MENU_INSTRUCTION_BUTTON = 4;
+	private const int GAME_MENU_QUIT_BUTTON = 5;
 	private static readonly Color MENU_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
 
 	private static readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
@@ -277,6 +289,9 @@ static class MenuController
 				break;
 			case MAIN_MENU_TOP_SCORES_BUTTON:
 				GameController.AddNewState(GameState.ViewingHighScores);
+				break;
+			case MAIN_MENU_INSTRUCTION_BUTTON:
+				GameController.AddNewState (GameState.Instruction);
 				break;
 			case MAIN_MENU_QUIT_BUTTON:
 				GameController.EndCurrentState();

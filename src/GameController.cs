@@ -302,6 +302,9 @@ public static class GameController
 			case GameState.ViewingHighScores:
 			HighScoreController.HandleHighScoreInput();
 				break;
+		case GameState.Instruction:
+			HighScoreController.HandleHighScoreInput ();
+			break;
 			
 		}
 
