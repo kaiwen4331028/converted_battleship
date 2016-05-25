@@ -279,7 +279,7 @@ static class MenuController
 	/// The main menu was clicked, perform the button's action.
 	/// </summary>
 	/// <param name="button">the button pressed</param>
-	private static void PerformMainMenuAction(int button)
+	public static void PerformMainMenuAction(int button)
 	{
 		switch (button) {
 			case MAIN_MENU_PLAY_BUTTON:
@@ -292,15 +292,16 @@ static class MenuController
 				GameController.AddNewState(GameState.ViewingHighScores);
 				break;
 			case MAIN_MENU_MUTE_BUTTON:
-				if (flag_mute == false)
+				if (flag_mute == true)
 				{
 					Audio.StopMusic ();
-					flag_mute = true;
+					flag_mute = false;
 					break;
 				}
 				else
 				{
 					SwinGame.PlayMusic (GameResources.GameMusic ("Background"));
+					flag_mute = true;
 					break;
 				}
 			case MAIN_MENU_INSTRUCTION_BUTTON:
@@ -349,21 +350,44 @@ static class MenuController
 				GameController.EndCurrentState();
 				//end game
 				break;
-			case GAME_MENU_MUTE_BUTTON:
-				if (flag_mute == false)
-				{
-					Audio.StopMusic ();
-					flag_mute = true;
-					break;
-				}
-				else
-				{
-					SwinGame.PlayMusic (GameResources.GameMusic ("Background"));
-					break;
-				}
+		case GAME_MENU_MUTE_BUTTON:
+			if (flag_mute == false)
+			{
+				Audio.StopMusic ();
+				flag_mute = true;
+				break;
+			}
+			else
+			{
+				SwinGame.PlayMusic (GameResources.GameMusic ("Background"));
+				flag_mute = false;
+				break;
+			}
 			case GAME_MENU_QUIT_BUTTON:
 				GameController.AddNewState(GameState.Quitting);
 				break;
+		}
+	}
+
+	// set the flag mute
+	public static bool Set_Flag_Mute
+	{
+		get
+		{
+			return flag_mute;
+		}
+		set
+		{
+			flag_mute = value;
+		}
+	}
+
+	// return the flag mute
+	public static bool Get_Flag_Mute
+	{
+		get
+		{
+			return flag_mute;
 		}
 	}
 }
